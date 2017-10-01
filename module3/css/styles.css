@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+
+body {
+    background-image: url('../img/background.jpg');
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4e5050;
+}
+
+h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-bottom: 30px;    
+}
+
+h2, h3 {
+    color: #263555; 
+}
+
+h3 {
+    font-size: 14px;
+}
+
+.box {
+    display: inline-block;
+}
+
+.wrapper {
+    max-width: 504px;
+    margin: 0 auto;
+    padding-left: 38px;
+    padding-right: 38px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.box.top img {
+    width: 100%;
+}
+
+.top h3, .bottom h3 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center {
+    border-bottom: 1px solid #dedbdb;
+    padding-bottom: 50px;
+}
+
+.article {
+    display: inline-flex;
+}
+
+.article:not(:first-of-type) {
+    margin-top: 25px;
+}
+
+.article div {
+    display: inline-block;
+}
+
+.article h3 {
+    margin-bottom: 15px;
+}
+
+.article-left {
+    padding-top: 2px;
+}
+
+.article-right {
+    padding-left: 10px;
+}
+
+.article-counter {
+    width: 26px;
+    height: 26px;
+    border-radius: 26px;
+    border: 1px solid #3d9dc8;
+    box-sizing: border-box;
+    background-color: #38afe5;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+}
+
+.bottom {
+    padding-bottom: 50px;
+}
+
+ul.list {
+    margin-top: 30px;
+}
+
+.list-item {
+    list-style: none;
+    list-style-image: url(../img/list-arrow.png);
+}
+
+.list-item {
+    list-style: none;
+    list-style-image: url(../img/list-arrow.png);
+    list-style-position: inside;
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.list-item span {
+    padding-left: 10px;
+}
