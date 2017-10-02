@@ -19,7 +19,8 @@ h2 {
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 25px;
     margin-top: 60px;
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
+    text-transform: uppercase;     
 }
 
 h2, h3 {
@@ -83,27 +84,22 @@ h3 {
 
 .article-counter {
     width: 26px;
-    height: 26px;
-    border-radius: 26px;
+    height: 28px;
+    border-radius: 12px;
     border: 1px solid #3d9dc8;
     box-sizing: border-box;
     background-color: #38afe5;
     color: #fff;
     text-align: center;
-    line-height: 24px;
+    line-height: 26px;
 }
 
 .bottom {
     padding-bottom: 50px;
-}
+} 
 
 ul.list {
     margin-top: 30px;
-}
-
-.list-item {
-    list-style: none;
-    list-style-image: url(../img/list-arrow.png);
 }
 
 .list-item {
