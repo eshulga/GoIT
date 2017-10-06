@@ -23,11 +23,11 @@ h2 {
     text-transform: uppercase;     
 }
 
-h2, h3 {
+h2, h3, .list-item span  {
     color: #263555; 
 }
 
-h3 {
+h3, .list-item span {
     font-size: 15px;
     margin-bottom: 10px;
 }
@@ -37,12 +37,15 @@ h3 {
 }
 
 .wrapper {
-    max-width: 1024px;
-    margin: 0 auto;
+    width: 1024px;
+    margin: 230px auto;
     padding-left: 59px;
     padding-right: 59px;
-    box-sizing: border-box;
     background-color: #fff;
+}
+.top {
+    border-bottom: 1px solid #dedbdb;
+    padding-bottom: 50px;
 }
 
 .top-left img {
@@ -55,6 +58,7 @@ h3 {
 .top-left, .bottom-left {
     width: 690px;
     float: left;
+    padding-right: 45px;
 }
 
 .article {
@@ -67,14 +71,16 @@ h3 {
     display: block;
 }
 
+.article:last-child {
+    margin-bottom: 0;
+}
+
 .article-right {
     float: right;
     width: 178px;
 }
 
-.top-left {
-    padding-right: 40px;
-}
+
 
 .top-right {
     counter-reset: list;
@@ -88,7 +94,6 @@ h3 {
     height: 28px;
     border-radius: 12px;
     border: 1px solid #3d9dc8;
-    box-sizing: border-box;
     background-color: #38afe5;
     color: #fff;
     text-align: center;
@@ -114,11 +119,30 @@ ul.list {
     list-style-position: inside;
     width: 50%;
     float: left;
-    font-size: 14px;
-    height: 35px;
-    line-height: 35px;
+    margin-bottom: 20px;
 }
 
 .list-item span {
     padding-left: 10px;
 }
+
+.sticker {
+    background-image: url(../img/sticker.png);
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 212px;
+    height: 220px;
+}
+
+h3.sign {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+h3.sign + span {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
