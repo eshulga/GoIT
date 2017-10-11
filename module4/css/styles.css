@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+@import url('//fonts.googleapis.com/css?family=Pathway+Gothic+One');
 
 * {
     padding: 0;
@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-weight: normal;
 }
-
 
 body {
     background-image: url('../img/page-bg.jpg');
@@ -23,11 +22,11 @@ h2 {
     text-transform: uppercase;     
 }
 
-h2, h3, .list-item span  {
+h2, h3, .list-item {
     color: #263555; 
 }
 
-h3, .list-item span {
+h3, .list-item {
     font-size: 15px;
     margin-bottom: 10px;
 }
