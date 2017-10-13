@@ -213,12 +213,19 @@ i#slider-nav-prev {
     background: url('../img/arrow-left.png') #38afe5 no-repeat 80% 50%;
 }
 
+i#slider-nav-prev:hover {
+    background: url('../img/arrow-left.png') rgba(56, 175, 229, 0.5) no-repeat 80% 50%;
+}
+
 i#slider-nav-next {
     border-top-right-radius: 45px;
     border-bottom-right-radius: 45px;
     background: url('../img/arrow-right.png') #38afe5 no-repeat 20% 50%;
 }
 
+i#slider-nav-next:hover {
+    background: url('../img/arrow-right.png') rgba(56, 175, 229, 0.5) no-repeat 20% 50%;
+}
 
 
 
