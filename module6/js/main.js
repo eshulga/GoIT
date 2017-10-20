@@ -1,9 +1,11 @@
 $(document).ready(function(){
-    $('.slider').slick({
-        autoplay: false,
-        nextArrow: '#slider-nav-next',
-        prevArrow: '#slider-nav-prev',
-    });
+
+    if($('.slider') !== 'undefined')
+        $('.slider').slick({
+            autoplay: false,
+            nextArrow: '#slider-nav-next',
+            prevArrow: '#slider-nav-prev',
+        });
 
     var scroll_top_duration = 800;
 
