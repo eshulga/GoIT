@@ -305,7 +305,9 @@ figure.destination figcaption p {
     padding: 0 10px;
 }
 
-figure.destination a {
+figure.destination a,
+.article-item .preview a {
+    display: inline-block;
     position: absolute;
     bottom: 20px;
     right: 13px;
@@ -315,6 +317,12 @@ figure.destination a {
     border: 1px solid #cecece;
     box-sizing: content-box;
     font-size: 11px;
+    color: #000;
+}
+
+.article-item .preview a {
+    position: static;
+    margin-top: 20px;
 }
 
 #to-top {
@@ -553,3 +561,78 @@ h3.sign + span {
     display: block;
 }
 
+.wrapper.blog main {
+    display: flex;
+    padding: 60px;
+}
+
+.blog .articles {
+    flex-grow: 1;
+    padding-right: 50px;
+}
+
+.blog aside {
+    flex-grow: 1;
+    min-width: 215px;
+}
+
+.blog aside ul .list-item {
+    width: inherit;
+}
+
+.article-item {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.article-item:nth-of-type(1) {
+    border-bottom: 1px solid #dedbdb;
+}
+
+.article-top {
+    display: flex;
+}
+
+.article-top h3 {
+    text-transform: uppercase;
+    margin-bottom: 5px;  
+}
+
+.article-center {
+    display: flex;
+    flex-direction: row;
+}
+
+.article-item .preview {
+    padding-left: 20px;
+}
+
+.details {
+    font-size: 10px;
+    color: #868f8f;
+    margin-bottom: 15px;
+}
+
+.details .comments {
+    float: right;
+}
+
+.article-top-left {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    padding-top: 4px; 
+    border-radius: 50%;
+    border: 1px solid #3d9dc8;
+    background-color: #38afe5;
+    color: #fff;
+    text-align: center;
+    line-height: 10px;
+    flex-shrink: 0;
+    font-size: 9px;
+}
+
+.article-top-right {
+    width: 100%;
+    padding-left: 10px;
+}
