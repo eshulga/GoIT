@@ -704,6 +704,7 @@ form.contact-form textarea::-webkit-input-placeholder {
 .map-wrapper iframe{
     width: 100%;
     min-height: 430px;
+    border:0;
 }
 
 .contacts-info {
