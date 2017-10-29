@@ -5,11 +5,16 @@ body {
     color: #4e5050;
 }
 
+strong {
+    font-weight: bold;
+}
+
 a,
 a:hover,
 a:visited,
 a:link {
     text-decoration: none;
+    cursor: pointer;
 }
 
 h1 {
@@ -171,7 +176,9 @@ main {
 
 main section,
 .slider-wrapper,
-.gallery-wrapper {
+.gallery-wrapper,
+.contacts-wrapper,
+.tours-wrapper {
     width: 902px;
     position: relative;
     margin: 0 auto;
@@ -324,6 +331,7 @@ figure.destination a,
     position: static;
     margin-top: 20px;
 }
+
 
 #to-top {
     display: block;
@@ -636,3 +644,406 @@ h3.sign + span {
     width: 100%;
     padding-left: 10px;
 }
+
+
+.contacts-wrapper,
+.tours-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+form.contact-form input, form.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    background-color: #fcfafa;
+    border: 1px solid #d4d0d0;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+form.contact-form input {
+    height: 30px;
+}
+
+form.contact-form textarea {
+    padding-top: 15px;
+    height: 235px;
+}
+
+form.contact-form input::-webkit-input-placeholder {
+    color: #263555;
+    font-size: 13px;
+}
+
+form.contact-form textarea::-webkit-input-placeholder {
+    font-size: 15px;
+    color: #263555;
+}
+
+.contacts-left,
+.tours-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: baseline;
+    width: 76%;
+}
+
+.contacts-left h2,
+.tours-left h2{
+    width: 100%;
+}
+
+.map-wrapper {
+    min-width: 440px;
+}
+
+.map-wrapper iframe{
+    width: 100%;
+    min-height: 430px;
+}
+
+.contacts-info {
+    padding-left: 20px;
+}
+
+.contacts-info table {
+    margin-bottom: 50px;
+}
+
+.contacts-info table caption {
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.contacts-info table td {
+    padding-bottom: 5px;
+    color: #666565;
+}
+
+.contacts-info table td:nth-child(2n) {
+    padding-left: 10px;
+}
+
+a.telto {
+    color: #666565;
+} 
+
+a.mailto {
+    color: #fa7e7e;
+}
+
+.contact-right,
+.tours-right {
+    width: 24%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-group button,
+.btn,
+a.details {
+    font-size: 15px;
+    padding: 5px 23px;
+    border-radius: 5px;
+    border: 1px solid #b1aaaa;
+    background-color: #fbf6f8;
+
+}
+
+form.contact-form .form-control {
+    position: relative;
+    display: block;
+}
+
+.atention {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+    color: #ff0000;
+    font-size: 11px;
+}
+
+section.other-info {
+    display: flex;
+    margin-top: 55px;
+}
+
+.other-right {
+    min-width: 288px;
+}
+
+.other-right .top {
+    box-sizing: border-box;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #dedbdb;
+    background-color: #fcfafa;
+    text-align: center;
+}
+
+.other-right .top h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.other-right .center {
+    padding: 30px 15px;
+    border: 1px solid #dedbdb;
+    border-top: none;
+}
+
+.other-right .center h3 {
+    margin-bottom: 25px;
+}
+
+.other-right input#email {
+    width: 100%;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 25px;
+    padding-left: 30px;
+}
+
+.other-right input#email:placeholder {
+    color: #dedede;
+    
+}
+
+ul.news-list {
+    margin-top: 45px;
+}
+
+.news-list .list-item {
+    list-style: none;
+    list-style-image: url(../img/news-list.png);
+    list-style-position: inside;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.other-left .center {
+    border: 1px solid #dfdfdf;
+    margin-right: 20px;
+    padding: 34px 0;
+}
+
+.nav-tabs {
+    display: flex;
+    height: 32px;
+    box-sizing: border-box;
+}
+
+.nav-tabs li {
+    width: 127px;
+    box-sizing: border-box;
+    line-height: 32px;
+    background-color: #fcfafa;
+    border-left: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+    cursor: pointer;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6b7488;
+}
+
+.nav-tabs li.active {
+    color: #38afe5;
+    height: 33px;
+    background-color: #fff;
+}
+
+.nav-tabs li:last-child {
+    border-right: 1px solid #dfdfdf;
+}
+
+.other-info article {
+    display: flex;
+    padding: 15px;
+}
+
+.article-right p {
+    padding: 8px 0px;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.article-right a {
+    color: red;
+}
+
+.article-right button {
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    padding: 5px 10px;
+    border-radius: 3px;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.tour-item {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.tours-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p.price-name {
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+p.price {
+    padding-top: 5px;
+    color: #38afe5;
+}
+
+.tours-item-left {
+    margin-right: 20px;
+}
+
+.tours-item-right h3 {
+    font-size: 12px;
+}
+
+a.details,
+button.details {
+    display: inline-block;
+    font-size: 11px;
+    margin-top: 20px;
+    padding: 5px 15px;
+    color: #000;
+}
+
+.tours-right label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+
+
+/* select */
+
+/* ///  DECORATION CSS ///  */
+.cont_select_center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -150px;
+  }
+  
+  .cont_heg_50 {
+    position: absolute;
+    height: 50%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fd7b52;
+  }
+  
+  /* ///  END DECORATION CSS  ///  */
+  .icon_select_mate {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    font-size: 16px;
+    height: 22px;
+    transition: all 275ms;
+    border: 1px solid #e3e2e2;
+  }
+
+  .icon_select_mate svg {
+    transition: all 275ms;
+  }
+  
+  .select_mate {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+    color: #868f8f;
+    background-color: #fcfafa;
+    transition: all 375ms ease-in-out;
+    border: 1px solid #e3e2e2;
+  }
+  .select_mate select {
+    position: absolute;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .cont_list_select_mate {
+    position: relative;
+    width: 100%;
+    top: 3px;
+  }
+  
+  .cont_select_int {
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    z-index: 999;
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    background-color: #fff;
+/*    border: 1px solid #e3e2e2; */
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    transition: all 375ms ease-in-out;
+  }
+  .cont_select_int li {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #F5F5F5;
+    list-style-type: none;
+    padding: 10px 2%;
+    margin: 0px;
+    transition: all 275ms ease-in-out;
+    display: block;
+    cursor: pointer;
+  }
+  .cont_select_int li:last-child {
+    border-radius: 3px;
+    border-bottom: 0px;
+  }
+  .cont_select_int li:hover {
+    background-color: #e3e2e2;
+  }
+  .cont_select_int .active {
+    background-color: #e3e2e2;
+    color: #fff;
+  }
+  
+  /* etiqueta <p> con la opcion selecionada  */
+  .selecionado_opcion {
+    padding: 6px 2%;
+    width: 96%;
+    display: block;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 10px;
+  }
