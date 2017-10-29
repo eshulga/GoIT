@@ -178,7 +178,8 @@ main section,
 .slider-wrapper,
 .gallery-wrapper,
 .contacts-wrapper,
-.tours-wrapper {
+.tours-wrapper,
+.other-info {
     width: 902px;
     position: relative;
     margin: 0 auto;
@@ -774,7 +775,7 @@ form.contact-form .form-control {
     font-size: 11px;
 }
 
-section.other-info {
+.other-info {
     display: flex;
     margin-top: 55px;
 }
