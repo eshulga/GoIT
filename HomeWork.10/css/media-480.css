@@ -1,0 +1,142 @@
+@media all and (max-width: 480px){
+    
+    header {
+        padding-bottom: 50px;
+    }
+    
+    .wrapper {
+        max-width: 480px;
+    }
+
+    .header-logo {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .header-logo a {
+        font-size: 34px;
+    }
+
+    .gallery-wrapper, .tours-wrapper {
+        padding: 0 40px;
+    }
+
+    .gallery-item {
+        margin-bottom: 40px;
+        padding: 0 !important;
+    }
+
+    .gallery-item:nth-child(n+7) {
+        display: none;
+    }
+
+    .footer-top {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    ul.menu {
+        min-width: 65%;
+        -webkit-box-pack: space-evenly;
+        -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    li.menu-item {
+        width: 30%;
+        padding-left: 25px;
+    }
+
+    .menu-item__link {
+        font-size: 20px;
+    }
+
+    .submenu-item__link {
+        font-size: 17px;
+    }
+
+    .tours-item-left {
+        width: 50%;
+    }
+
+    .tours-item-left img {
+        width: 100%;
+    }
+
+    ul.footer-nav-list {
+        max-width: 70%;
+        margin: 0 auto;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .footer-nav-item__link {
+        margin: 0 0;
+    }
+
+    .footer-contacts {
+        width: 65%;
+    }
+
+    .footer-contacts p {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: baseline;
+        -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+    }
+
+    .footer-contacts .opensans {
+        font-size: 14px;
+    }
+
+    .footer-contacts a {
+        font-size: 10px;
+    }
+
+    .top-left img {
+        max-width: 100%;
+    }
+
+    main > div.box {
+        max-width: 400px;
+    }
+
+    .sticker {
+        height: 145px;
+        padding: 10px;
+        max-width: 270px;
+        background-image: url(../img/agency/sticker-480.png);
+        font-size: 11px;
+        position: relative;
+        margin: 0 auto;
+    }
+    article.box.bottom-left.col-12.col-sm-9 {
+        padding-right: 0px;
+    }
+    .box.top-left,
+    .box.bottom-left {
+        padding-right: 0px;
+    }
+
+    .gallery-item:hover:before {
+        width: 100%;
+    }
+}
