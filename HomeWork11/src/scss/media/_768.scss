@@ -1,0 +1,155 @@
+@media all and (max-width: 768px) {
+    
+        header {
+            height: initial;
+            padding-bottom: 10px;
+        }
+    
+        .wrapper {
+            max-width: 768px;
+        }
+    
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &-wrapper {
+                max-width: 710px;
+            }
+
+            &-item{
+                margin-bottom: 40px;
+                padding: 0;
+
+                &:nth-child(n+9) {
+                    display: none;
+                }
+                
+                &:nth-child(even) {
+                    padding-left: 8px;
+                }
+
+                &:nth-child(odd) {
+                    padding-right: 8px;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    
+        .tours-wrapper, main > div.box {
+            max-width: 680px;
+        }
+    
+    
+        li.menu-item a {
+            font-size: 24px;
+        }
+    
+        li.menu-item:nth-child(3){
+            margin-right: 0;
+        }
+    
+        li.menu-item:nth-child(4) {
+            margin-left: 0;
+        }
+    
+        .logo {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            transform: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 25px auto;
+            line-height: 100px;
+        }
+    
+        .logo a {
+            font-size: 46px;
+        }
+    
+        ul.menu {
+            height: initial;
+            position: relative;
+            max-width: 40%;
+            flex-wrap: wrap;
+            line-height: 40px
+        }
+    
+        li.menu-item {
+            width: 30%;
+            padding-left: 25px;
+            a {
+                padding: 0;
+            }
+        }
+    
+        nav.footer-nav,
+        .footer-contacts {
+            padding-left: 0;
+        }
+    
+        ul.footer-nav-list {
+            width: initial;
+        }
+    
+        li.submenu-item a {
+            font-size: 17px;
+            max-height: 22px;
+            line-height: 22px;
+        }
+    
+        li.menu-item:hover > ul.submenu {
+            display: flex;
+            flex-wrap: wrap;
+            z-index: 99;
+            left: 15px;
+            top: 36px;
+        }
+        ul.submenu .submenu-item {
+            width: 100%;
+        }
+    
+        ul.submenu:before {
+            margin: 0 auto;
+        }
+    
+        li.footer-nav-item a {
+            margin: 0 0px;
+        }
+    
+        .tours-item-right h3 {
+            font-size: 15px;
+        }
+    
+        p.price-name {
+            font-size: 12px;
+            margin: 0;
+        }
+    
+        p.price {
+            font-size: 16px;
+            margin: 0;
+        }
+        .sticker {
+            height: 270px;
+            background-image: url(../img/agency/sticker-768.png);
+            padding: 20px 20px;
+            margin: 0;
+            background-position: initial;
+        }
+    
+        .box.top-left,
+        .box.bottom-left {
+            padding-right: 0px;
+        }
+    
+        article.box.bottom-left.col-12.col-sm-9 {
+            padding-right: 40px;
+        }
+    }
